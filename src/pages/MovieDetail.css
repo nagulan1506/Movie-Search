@@ -1,0 +1,266 @@
+.movie-detail-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem 4rem;
+  position: relative;
+  z-index: 1;
+}
+
+.back-button {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  color: #ffffff;
+  padding: 0.8rem 1.5rem;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  transition: all 0.3s ease;
+  margin-bottom: 2rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.back-button:hover {
+  background: rgba(255, 255, 255, 0.25);
+  border-color: rgba(255, 255, 255, 0.5);
+  transform: translateX(-5px);
+}
+
+.movie-detail-content {
+  display: grid;
+  grid-template-columns: 350px 1fr;
+  gap: 3rem;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 2.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+.movie-detail-poster {
+  position: sticky;
+  top: 2rem;
+  height: fit-content;
+}
+
+.detail-poster-img {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.detail-poster-img:hover {
+  transform: scale(1.02);
+}
+
+.movie-detail-info {
+  color: #333;
+}
+
+.detail-title {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+  color: #d63384;
+}
+
+.detail-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  align-items: center;
+}
+
+.detail-year,
+.detail-rated,
+.detail-runtime {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(5px);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border: 1px solid rgba(214, 51, 132, 0.3);
+  color: #d63384;
+}
+
+.detail-genre {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.genre-tag {
+  background: linear-gradient(135deg, #ff9ec8 0%, #ff6ba8 100%);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  box-shadow: 0 4px 10px rgba(214, 51, 132, 0.3);
+  color: #ffffff;
+}
+
+.detail-rating {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.rating-label {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #d63384;
+}
+
+.rating-value {
+  font-size: 1.3rem;
+  font-weight: 700;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  color: #d63384;
+}
+
+.rating-votes {
+  font-size: 0.9rem;
+  color: #c7367d;
+}
+
+.detail-plot {
+  margin-bottom: 2rem;
+  line-height: 1.8;
+}
+
+.detail-plot h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+  color: #d63384;
+}
+
+.detail-plot p {
+  font-size: 1.05rem;
+  color: #333;
+  line-height: 1.8;
+}
+
+.detail-crew {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  border-left: 4px solid rgba(255, 255, 255, 0.3);
+}
+
+.crew-item {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.crew-item strong {
+  color: #ffffff;
+  margin-right: 0.5rem;
+}
+
+.detail-awards {
+  background: rgba(255, 215, 0, 0.3);
+  border: 1px solid rgba(255, 215, 0, 0.5);
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+.detail-footer-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(214, 51, 132, 0.2);
+  margin-top: 1rem;
+}
+
+.footer-item {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+.footer-item strong {
+  display: block;
+  margin-bottom: 0.25rem;
+  color: #d63384;
+  font-weight: 600;
+}
+
+@media (max-width: 968px) {
+  .movie-detail-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 2rem;
+  }
+
+  .movie-detail-poster {
+    position: static;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .detail-title {
+    text-align: center;
+  }
+
+  .detail-meta {
+    justify-content: center;
+  }
+
+  .detail-genre {
+    justify-content: center;
+  }
+
+  .detail-rating {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .movie-detail-container {
+    padding: 1.5rem 1rem 3rem;
+  }
+
+  .movie-detail-content {
+    padding: 1.5rem;
+  }
+
+  .detail-footer-info {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .back-button {
+    padding: 0.7rem 1.2rem;
+    font-size: 0.9rem;
+  }
+
+  .movie-detail-content {
+    padding: 1.25rem;
+  }
+
+  .detail-title {
+    font-size: 1.75rem;
+  }
+}
