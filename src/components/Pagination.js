@@ -140,3 +140,4 @@ function Pagination({ currentPage, totalPages, onPageChange }) {
 }
 
 export default Pagination;
+

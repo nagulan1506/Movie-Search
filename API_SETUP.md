@@ -52,3 +52,4 @@ After creating/updating the `.env` file:
 ## Security Note
 
 The `.env` file is automatically ignored by git (it's in `.gitignore`), so your API key won't be committed to version control. Never share your API key publicly!
+

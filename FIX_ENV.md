@@ -35,3 +35,4 @@ If environment variables still don't work, you can temporarily hardcode the key 
 const API_KEY = '420d9b07'; // Temporary - change back to process.env.REACT_APP_OMDB_API_KEY for production
 ```
 
+
